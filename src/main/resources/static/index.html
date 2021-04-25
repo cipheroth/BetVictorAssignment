@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BetVictor Chat Assignment</title>
+    <link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <script src="/js/app.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <style>
+        h1 {
+            font-family: 'Permanent Marker', cursive;
+        }
+        .form-control {
+            width: 40%;
+        }
+    </style>
+</head>
+<body>
+<noscript>
+    <h2 style="color: #ff0000">It seems your browser doesn't support JavaScript! WebSocket relies on JavaScript being enabled. Please enable JavaScript and reload this page!</h2>
+</noscript>
+<div id="main-content" class="container">
+    <div class="row my-2">
+        <div class="col-md-12 text-center">
+            <div>
+                <div>
+                    <input type="text" id="sender" placeholder="Choose a nickname"/>
+                    <input type="text" id="recipient" placeholder="Choose a user to chat"/>
+                </div>
+                <br />
+                <div>
+                    <button id="connect" class="btn btn-primary" onclick="connect();">Connect</button>
+                    <button id="disconnect" class="btn btn-primary" disabled="disabled" onclick="disconnect();">Disconnect</button>
+                </div>
+                <br />
+                <div id="conversationDiv">
+                    <input type="text" id="text" disabled="disabled" placeholder="Write a message..."/>
+                    <button id="sendMessage" disabled="disabled" class="btn btn-secondary" onclick="sendMessage();">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <p id="response"></p>
+    </div>
+</div>
+</body>
+</html>

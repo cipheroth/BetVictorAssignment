@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BetVictor Chat Action-Monitor</title>
+    <link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <script src="/js/app.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <style>
+        h1 {
+            font-family: 'Permanent Marker', cursive;
+        }
+        .form-control {
+            width: 40%;
+        }
+    </style>
+</head>
+<body onload="connectMonitor()">
+<noscript>
+    <h2 style="color: #ff0000">It seems your browser doesn't support JavaScript! WebSocket relies on JavaScript being enabled. Please enable JavaScript and reload this page!</h2>
+</noscript>
+<div id="main-content" class="container">
+     <div>
+         <p id="information"></p>
+         <p id="response"></p>
+    </div>
+</div>
+</body>
+</html>
