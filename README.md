@@ -65,5 +65,7 @@ JDBC URL: jdbc:h2:file:./src/main/resources/testdb;DB_CLOSE_ON_EXIT=FALSE;IFEXIS
 ```
 the only table available is ***MESSAGE_ENTITY***
 
+![image](https://github.com/cipheroth/BetVictorAssignment/blob/master/databaseH2console.jpg)
+
 ### About Testing 
 About testing for time reasons I have provided only integration testing end to end using *SpringBootTest*
